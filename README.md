@@ -18,39 +18,38 @@ This is a simple blind auction web application built using Python and Flask. Use
 
 ## Project Structure
 
-bidProjects/
-├── app.py               # Main Flask app logic
-├── Templates/
-│   ├── index.html       # Bid submission page
-│   ├── no_bids.html     # Message when no bids are found
-│   └── winner.html      # Winner display page
+bidProjects
+app.py               # Main Flask app logic
+Templates/
+        index.html       # Bid submission page
+        no_bids.html     # Message when no bids are found
+        winner.html      # Winner display page
 
 ## Getting Started
 
 ### 1. Clone the Repository
 
-```bash
+### bash
 git clone https://github.com/ayoubgeek/blind-auction-flask-app.git
 cd blind-auction-flask-app
 
-2. Set Up a Virtual Environment
+## 2. Set Up a Virtual Environment
 python -m venv venv
 source venv/bin/activate  # For Unix/macOS
 venv\Scripts\activate     # For Windows
 
-3. Install Dependencies
+## 3. Install Dependencies
 pip install -r requirements.txt
 
 If you don’t have requirements.txt yet, install Flask manually:
 pip install Flask
 
-4. Run the App
+## 4. Run the App
 python app.py
 
-Visit http://127.0.0.1:5000 in your browser to access the app.
+### Visit http://127.0.0.1:5000 in your browser to access the app.
 
-
-How It Works
+## How It Works
 	•	Users are prompted to enter their name and bid on the homepage.
 	•	Submitted bids are stored in a dictionary in memory.
 	•	When the bidding session ends, the app checks who placed the highest bid and displays the winner.
@@ -58,14 +57,14 @@ How It Works
 
 ⸻
 
-Example Output
+## Example Output
 	•	Bid Submission Page: Input your name and your bid securely.
 	•	No Bids Page: “No bids have been placed yet.”
 	•	Winner Page: “Congratulations [Name], you won with a bid of $[Amount]!”
 
 ⸻
 
-Notes
+## Notes
 	•	This app is intended for educational and demonstration purposes.
 	•	Data is stored temporarily in memory and will reset on every server restart.
 
